@@ -65,23 +65,77 @@ nav .nav-title{
     width: 100%;
 }
 
+/* main style */
+
+main{
+    /* max-width: 1100px; */
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* feature- style */
+.feature-container{
+    display: flex;
+    align-items: center;
+    /* width: calc(100%/2); */
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+/* .feature-image img{
+    width: 100%;
+} */
+.feature-content{
+    padding-left: 74px;
+    padding-right: 70px;
+}
+.feature-title{
+    font-size: 2.8rem;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-weight: 700;
+}
+.feature-word{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
 /* responsive style */
 /* mobile device  */
 @media screen and (max-width:576px) {
     header{
         padding: 15px;
     }
+    .feature-container,
     nav{
         flex-direction: column;
     }
     nav > ul{
         flex-direction: column;
     }
+    .feature-image{
+        grid-template-columns: 1fr;
+    }
+    .feature-content{
+        padding-left: 14px;
+        padding-right: 10px;
+    }
 }
 /* mediam device */
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 15px;
+    }
+    .feature-container{
+        flex-direction: column-reverse;
     }
     nav{
         flex-direction: column;
