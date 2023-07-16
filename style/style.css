@@ -106,6 +106,56 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+/* enjoy-section style */
+.enjoy-section{
+    display: flex;
+    margin-top: 100px;
+    gap: 60px;
+}
+.enjoy-content .nav-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.enjoy-card-title{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.enjoy-card-container{
+    padding: 25px 35px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 15px;
+}
+.enjoy-image img{
+    height: 75%;
+    margin-left: 50px;
+}
+.experience{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 300px;
+    height: 180px;
+    position: relative;
+    bottom: 100px;
+}
+.experience-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin: 0;
+}
+.experience-ditels{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 /* fact-section */
 .facts-section{
     padding-top: 100px;
@@ -145,6 +195,19 @@ main{
     justify-content: space-evenly;
     padding-top: 20px;
 }
+/* footer-section */
+.footer-section{
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+.footer-content{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #424242;
+    text-align: center;
+    padding: 20px 0;
+}
+
 
 /* responsive style */
 /* mobile device  */
@@ -152,6 +215,7 @@ main{
     header{
         padding: 15px;
     }
+    .enjoy-section,
     .card-facts-container,
     .feature-container,
     nav{
@@ -175,6 +239,13 @@ main{
         text-align: center;
         gap: 30px;
     }
+    .enjoy-image img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .experience{
+        position: static;
+    }
 }
 /* mediam device */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -184,7 +255,8 @@ main{
     .feature-container{
         flex-direction: column-reverse;
     }
-    nav{
+    nav,
+    .enjoy-section{
         flex-direction: column;
     }
     .card-facts-container{
@@ -196,5 +268,12 @@ main{
         flex-direction: column;
         text-align: center;
         gap: 30px;
+    }
+    .enjoy-image img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .experience{
+        position: static;
     }
 }
